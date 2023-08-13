@@ -1,0 +1,11 @@
+version: "3"
+services:
+  simulator:
+    image: sensor-simulator
+    networks:
+      - connect_lab_backend_default
+
+networks:
+  connect_lab_backend_default:
+    name: connect-lab-backend_default
+    external: true
